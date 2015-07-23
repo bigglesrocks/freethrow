@@ -6,8 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Jessica biggs",
-  "license": "ISC",
+  "author": {
+  	"name": "Jessica biggs",
+  	"email": "jessica@jessicabiggs.com",
+  	"url": "http://jessicabiggs.com"
+  }
+  "license": "MIT",
+  ""
   "bin": {
     "freethrow": "index.js"
   },
