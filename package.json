@@ -1,0 +1,17 @@
+{
+  "name": "FreeThrow",
+  "version": "1.0.0",
+  "description": "A tool for creating dribble shots via command line",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jessica biggs",
+  "license": "ISC",
+  "bin": {
+    "freethrow": "index.js"
+  },
+  "dependencies": {
+    "lwip": "0.0.7"
+  }
+}
