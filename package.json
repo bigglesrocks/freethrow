@@ -7,10 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": {
-  	"name": "Jessica biggs",
+  	"name": "Jessica Biggs",
   	"email": "jessica@jessicabiggs.com",
   	"url": "http://jessicabiggs.com"
-  }
+  },
   "license": "MIT",
   "keywords": ["image processing", "CLI", "tool", "dribbble"],
   "bin": {
