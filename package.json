@@ -12,11 +12,14 @@
   	"url": "http://jessicabiggs.com"
   }
   "license": "MIT",
-  ""
   "bin": {
     "freethrow": "index.js"
   },
   "dependencies": {
     "lwip": "0.0.7"
+  },
+  "repository": {
+  	"type": "git",
+  	"url": "git@github.com:jlegosama/freethrow.git"
   }
 }
