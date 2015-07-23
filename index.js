@@ -16,22 +16,27 @@ if(rotate > -1) {
 
 if(file.indexOf('/') > -1) {
 	filePath = file.replace(/[^\/]*$/, '');
-} else {
-	filePath = processedName;
 }
 
+if(!processedName || processedName.indexOf('--') > -1) {
+	processName == 'dribble';
+}
+
+var newFile = filePath+processedName;
 
 console.log('Dribbbling '+file+'...');
 console.log('File: '+file);
 console.log('Rotation: '+deg);
 console.log('Rename: '+processedName);
+console.log('FilPath: '+filePath);
+console.log('New File: '+newFile);
 
 fs.readFile(file, function(err, data) {
-	fs.writeFile(processedName, data, function(err) {
+	fs.writeFile(newFile, data, function(err) {
 		if(err) { console.log(err); return false; } else {
-			console.log('Copied file'+file+' to '+processedName);
+			console.log('Copied file "'+file+'"" to "'+processedName+'"');
 
-			lwip.open(filePath, function(err, image){
+			lwip.open(newFile, function(err, image){
 				if(err) { console.log(err); return false; }
 				else if(!image) {
 					console.log("Could not open "+filePath);
@@ -54,7 +59,7 @@ fs.readFile(file, function(err, data) {
 										if(err) { console.log(err); return false; }
 										else {
 											// Write file to disk
-											image.writeFile(filePath, function(err) {
+											image.writeFile(newFile, function(err) {
 												if(err) { console.log(err); return false; }
 												else { console.log('Finished! Wrote '+processedName+' to disk'); }
 											});
