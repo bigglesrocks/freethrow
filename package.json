@@ -12,6 +12,7 @@
   	"url": "http://jessicabiggs.com"
   }
   "license": "MIT",
+  "keywords": ["image processing", "CLI", "tool", "dribbble"],
   "bin": {
     "freethrow": "index.js"
   },
