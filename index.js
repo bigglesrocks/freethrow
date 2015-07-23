@@ -48,7 +48,7 @@ fs.readFile(file, function(err, data) {
 						if(err) { console.log(err); return false; }
 						else {
 
-							var factor = 1 + Math.abs(90-deg)/100;
+							var factor = 1 + deg/100;
 
 							image.scale(factor, factor, function(err, image) {
 
