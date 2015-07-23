@@ -1,3 +1,7 @@
+**Turn your comps into dribbble shots the lazy way**
+
+![Example](example.jpg)
+
 ##Usage
 
 Install via NPM
