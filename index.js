@@ -25,11 +25,11 @@ if(!processedName || processedName.indexOf('--') > -1) {
 var newFile = filePath+processedName;
 
 console.log('Dribbbling '+file+'...');
-console.log('File: '+file);
-console.log('Rotation: '+deg);
-console.log('Rename: '+processedName);
-console.log('FilPath: '+filePath);
-console.log('New File: '+newFile);
+// console.log('File: '+file);
+// console.log('Rotation: '+deg);
+// console.log('Rename: '+processedName);
+// console.log('FilePath: '+filePath);
+// console.log('New File: '+newFile);
 
 fs.readFile(file, function(err, data) {
 	fs.writeFile(newFile, data, function(err) {
