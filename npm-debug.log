@@ -1,103 +1,24 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'publish', './' ]
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'uninstall',
+1 verbose cli   '--global',
+1 verbose cli   'freethrow' ]
 2 info using npm@1.4.28
 3 info using node@v0.10.33
-4 verbose publish [ './' ]
-5 verbose cache add [ './', null ]
-6 verbose cache add name=undefined spec="./" args=["./",null]
-7 verbose parsed url { protocol: null,
-7 verbose parsed url   slashes: null,
-7 verbose parsed url   auth: null,
-7 verbose parsed url   host: null,
-7 verbose parsed url   port: null,
-7 verbose parsed url   hostname: null,
-7 verbose parsed url   hash: null,
-7 verbose parsed url   search: null,
-7 verbose parsed url   query: null,
-7 verbose parsed url   pathname: './',
-7 verbose parsed url   path: './',
-7 verbose parsed url   href: './' }
-8 silly lockFile 0ee6c175- ./
-9 verbose lock ./ /Users/biggsj/.npm/0ee6c175-.lock
-10 verbose tar pack [ '/Users/biggsj/.npm/FreeThrow/1.0.0/package.tgz', './' ]
-11 verbose tarball /Users/biggsj/.npm/FreeThrow/1.0.0/package.tgz
-12 verbose folder ./
-13 info prepublish FreeThrow@1.0.0
-14 silly lockFile 04cb2bca-tar tar://./
-15 verbose lock tar://./ /Users/biggsj/.npm/04cb2bca-tar.lock
-16 silly lockFile 36a44e1a--npm-FreeThrow-1-0-0-package-tgz tar:///Users/biggsj/.npm/FreeThrow/1.0.0/package.tgz
-17 verbose lock tar:///Users/biggsj/.npm/FreeThrow/1.0.0/package.tgz /Users/biggsj/.npm/36a44e1a--npm-FreeThrow-1-0-0-package-tgz.lock
-18 silly lockFile 04cb2bca-tar tar://./
-19 silly lockFile 04cb2bca-tar tar://./
-20 silly lockFile 36a44e1a--npm-FreeThrow-1-0-0-package-tgz tar:///Users/biggsj/.npm/FreeThrow/1.0.0/package.tgz
-21 silly lockFile 36a44e1a--npm-FreeThrow-1-0-0-package-tgz tar:///Users/biggsj/.npm/FreeThrow/1.0.0/package.tgz
-22 silly lockFile e68bb1b2-ggsj-npm-FreeThrow-1-0-0-package /Users/biggsj/.npm/FreeThrow/1.0.0/package
-23 verbose lock /Users/biggsj/.npm/FreeThrow/1.0.0/package /Users/biggsj/.npm/e68bb1b2-ggsj-npm-FreeThrow-1-0-0-package.lock
-24 silly lockFile e68bb1b2-ggsj-npm-FreeThrow-1-0-0-package /Users/biggsj/.npm/FreeThrow/1.0.0/package
-25 silly lockFile e68bb1b2-ggsj-npm-FreeThrow-1-0-0-package /Users/biggsj/.npm/FreeThrow/1.0.0/package
-26 silly lockFile 0ee6c175- ./
-27 silly lockFile 0ee6c175- ./
-28 silly publish { name: 'FreeThrow',
-28 silly publish   version: '1.0.0',
-28 silly publish   description: 'A tool for creating dribble shots via command line',
-28 silly publish   main: 'index.js',
-28 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
-28 silly publish   author:
-28 silly publish    { name: 'Jessica Biggs',
-28 silly publish      email: 'jessica@jessicabiggs.com',
-28 silly publish      url: 'http://jessicabiggs.com' },
-28 silly publish   license: 'MIT',
-28 silly publish   keywords: [ 'image processing', 'CLI', 'tool', 'dribbble' ],
-28 silly publish   bin: { freethrow: 'index.js' },
-28 silly publish   dependencies: { lwip: '0.0.7' },
-28 silly publish   repository: { type: 'git', url: 'git@github.com:jlegosama/freethrow.git' },
-28 silly publish   readme: '**Turn your comps into dribbble shots the lazy way**\n\n![Example](example.jpg)\n\n##Usage\n\nInstall via NPM\n\n    npm install freethrow --global\n\nCreate a dribbble shot from an image:\n\n    freethrow /Path/To/file.jpg --rename dribble-shot.jpg --rotate 30\n\nThe file path can be a full file path, or a the name of a file in the current directory.\n',
-28 silly publish   readmeFilename: 'README.md',
-28 silly publish   gitHead: '12d3a0f5501e026365ce5bebc7f927a25687015f',
-28 silly publish   bugs: { url: 'https://github.com/jlegosama/freethrow/issues' },
-28 silly publish   homepage: 'https://github.com/jlegosama/freethrow',
-28 silly publish   _id: 'FreeThrow@1.0.0',
-28 silly publish   _shasum: '1cd7ff979c06ee2098f6e4c3a530e9e943027728',
-28 silly publish   _from: './' }
-29 verbose request where is /FreeThrow
-30 verbose request registry https://registry.npmjs.org/
-31 verbose request id 45724b7d977fa3ca
-32 verbose url raw /FreeThrow
-33 verbose url resolving [ 'https://registry.npmjs.org/', './FreeThrow' ]
-34 verbose url resolved https://registry.npmjs.org/FreeThrow
-35 verbose request where is https://registry.npmjs.org/FreeThrow
-36 info trying registry request attempt 1 at 14:11:59
-37 http PUT https://registry.npmjs.org/FreeThrow
-38 http 400 https://registry.npmjs.org/FreeThrow
-39 verbose headers { 'content-type': 'application/json',
-39 verbose headers   'cache-control': 'max-age=60',
-39 verbose headers   'content-length': '54',
-39 verbose headers   'accept-ranges': 'bytes',
-39 verbose headers   date: 'Thu, 23 Jul 2015 19:12:02 GMT',
-39 verbose headers   via: '1.1 varnish',
-39 verbose headers   connection: 'keep-alive',
-39 verbose headers   'x-served-by': 'cache-dfw1828-DFW',
-39 verbose headers   'x-cache': 'MISS',
-39 verbose headers   'x-cache-hits': '0',
-39 verbose headers   'x-timer': 'S1437678720.835175,VS0,VE1383' }
-40 error publish Failed PUT 400
-41 error Error: name can no longer contain capital letters : FreeThrow
-41 error     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:308:14)
-41 error     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:246:65)
-41 error     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:236:22)
-41 error     at Request.emit (events.js:98:17)
-41 error     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1142:14)
-41 error     at Request.emit (events.js:117:20)
-41 error     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1096:12)
-41 error     at IncomingMessage.emit (events.js:117:20)
-41 error     at _stream_readable.js:943:16
-41 error     at process._tickCallback (node.js:419:13)
-42 error If you need help, you may report this *entire* log,
-42 error including the npm and node versions, at:
-42 error     <http://github.com/npm/npm/issues>
-43 error System Darwin 14.0.0
-44 error command "node" "/usr/local/bin/npm" "publish" "./"
-45 error cwd /Users/biggsj/sites/freethrow
-46 error node -v v0.10.33
-47 error npm -v 1.4.28
-48 verbose exit [ 1, true ]
+4 verbose lib/node_modules/freethrow unbuild
+5 info preuninstall freethrow@1.0.0
+6 info uninstall freethrow@1.0.0
+7 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild freethrow@1.0.0
+8 verbose /usr/local/bin,[object Object] binRoot
+9 error Refusing to delete: /usr/local/bin/freethrow not in /usr/local/lib/node_modules/freethrow
+File exists: /usr/local/bin/freethrow
+Move it away, and try again.
+10 error System Darwin 14.0.0
+11 error command "node" "/usr/local/bin/npm" "uninstall" "--global" "freethrow"
+12 error cwd /Users/biggsj/sites/freethrow
+13 error node -v v0.10.33
+14 error npm -v 1.4.28
+15 error path /usr/local/bin/freethrow
+16 error code EEXIST
+17 verbose exit [ 1, true ]

@@ -6,7 +6,7 @@ var userArgs = process.argv.slice(2),
 	processedName = userArgs[userArgs.indexOf('--rename') +1] || userArgs[1],
 	rotate = userArgs.indexOf('--rotate'),
 	deg = 0,
-	filePath,
+	filePath = '',
 	lwip = require('lwip'),
 	fs = require('fs');
 
